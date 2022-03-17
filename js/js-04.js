@@ -80,7 +80,7 @@
 //   // Change code below this line
 //     console.log(`Array : ${orderedItems}`);
 
-//     orderedItems.forEach(function (number, index) {
+//    orderedItems.forEach(function (number, index) {
 //         totalPrice += number;
 //     });
 
@@ -102,6 +102,214 @@
 
 Выполни рефакторинг функции так, чтобы вместо цикла for она использовала метод forEach
 */
+
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+//   // Change code below this line
+
+//     numbers.forEach(function (number, index) {
+//         //console.log(number);
+//         if (number > value) {
+//             filteredNumbers.push(number);
+//         }
+//     });
+//     console.log(filteredNumbers);
+    
+    
+
+//   // Change code above this line
+//   return filteredNumbers;
+// }
+
+// filterArray([1, 2, 3, 4, 5], 3) // [4, 5]
+// filterArray([1, 2, 3, 4, 5], 4) // [5]
+// filterArray([1, 2, 3, 4, 5], 5) // []
+// filterArray([12, 24, 8, 41, 76], 38) // [41, 76]
+// filterArray([12, 24, 8, 41, 76], 20) // [24, 41, 76]
+
+
+
+/*
+Автопроверки 4.7
+Функция getCommonElements(firstArray, secondArray) принимает два массива произвольной длины в параметры 
+firstArray и secondArray, и возвращает новый массив их общих элементов, то есть тех которые есть в обоих массивах.
+
+Выполни рефакторинг функции так, чтобы вместо цикла for она использовала метод forEach.
+*/
+
+// function getCommonElements(firstArray, secondArray) {
+//   const commonElements = [];
+//   // Change code below this line
+    
+//     firstArray.forEach(function (number, index) {
+//         if (secondArray.includes(number)) {
+//       commonElements.push(number);
+//     }
+//     })
+
+//     console.log(commonElements);
+//   return commonElements;
+//   // Change code above this line
+// }
+
+// getCommonElements([1, 2, 3], [2, 4]) // [2]
+// getCommonElements([1, 2, 3], [2, 1, 17, 19]) // [1, 2]
+// getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]) // [12, 27, 3]
+// getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]) // [10, 30, 40]
+// getCommonElements([1, 2, 3], [10, 20, 30]) // []
+
+
+
+/* 
+Автопроверки 4.8
+Выполни рефакторинг функции calculateTotalPrice() так, чтобы она была объявлена как стрелочная.
+*/
+
+// function calculateTotalPrice(quantity, pricePerItem) {
+//   // Change code above this line
+//   return quantity * pricePerItem;
+// }
+
+// const calculateTotalPrice = (quantity, pricePerItem) =>{
+//     console.log(quantity * pricePerItem) 
+//     return quantity * pricePerItem;
+// }
+
+// calculateTotalPrice(5, 100) // 500
+// calculateTotalPrice(8, 60) // 480
+// calculateTotalPrice(3, 400) // 1200
+
+
+
+/* 
+Автопроверки 4.9
+Выполни рефакторинг функции calculateTotalPrice() так, чтобы она использовала неявный возврат.
+*/
+
+// const calculateTotalPrice = (quantity, pricePerItem) => quantity * pricePerItem;
+
+// console.log(calculateTotalPrice(5, 100)); // 500
+// console.log(calculateTotalPrice(8, 60)); // 480
+// console.log(calculateTotalPrice(3, 400)); // 1200
+
+
+
+/* 
+Автопроверки 4.10
+Выполни рефакторинг функции calculateTotalPrice(orderedItems) заменив её объявление на стрелочную функцию. 
+Замени коллбек-функцию передаваемую в метод forEach() на стрелочную функцию.
+*/
+
+// const calculateTotalPrice = (orderedItems) => {
+//     let totalPrice = 0;
+
+//     orderedItems.forEach((number, index) => {
+//         totalPrice += number;
+//     });
+
+//     console.log(totalPrice);
+//     return totalPrice;
+// }
+
+// calculateTotalPrice([12, 85, 37, 4]) // 138
+// calculateTotalPrice([164, 48, 291]) // 503
+// calculateTotalPrice([412, 371, 94, 63, 176]) // 1116
+
+
+
+/* 
+Автопроверки 4.11
+Замени объявление функции filterArray() и коллбек для метода forEach() на стрелочные функции.
+*/
+
+// const filterArray = (numbers, value) =>{
+//   const filteredNumbers = [];
+
+//   numbers.forEach( (number) =>{
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
+
+//     console.log(filteredNumbers);
+//   return filteredNumbers;
+// }
+
+// filterArray([1, 2, 3, 4, 5], 3) // [4, 5]
+// filterArray([1, 2, 3, 4, 5], 4) // [5]
+// filterArray([1, 2, 3, 4, 5], 5) // []
+// filterArray([12, 24, 8, 41, 76], 38) // [41, 76]
+// filterArray([12, 24, 8, 41, 76], 20) // [24, 41, 76]
+
+
+
+/* 
+Автопроверки 4.12
+Замени объявление функции getCommonElements() и коллбек для метода forEach() на стрелочные функции
+*/
+
+// const  getCommonElements= (firstArray, secondArray)=> {
+//   const commonElements = [];
+
+//   firstArray.forEach((number) =>{
+//     if (secondArray.includes(number)) {
+//       commonElements.push(number);
+//     }
+//   });
+
+//     console.log(commonElements);
+//   return commonElements;
+// }
+
+// getCommonElements([1, 2, 3], [2, 4]) // [2]
+// getCommonElements([1, 2, 3], [2, 1, 17, 19]) // [1, 2]
+// getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]) // [12, 27, 3]
+// getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]) // [10, 30, 40]
+// getCommonElements([1, 2, 3], [10, 20, 30]) // []
+
+
+
+/* */
+
+
+
+/* */
+
+
+
+/* */
+
+
+
+/* */
+
+
+
+/* */
+
+
+
+/* */
+
+
+
+/* */
+
+
+
+/* */
+
+
+
+/* */
+
+
+
+/* */
+
+
+
+/* */
 
 
 
