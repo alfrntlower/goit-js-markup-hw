@@ -42,7 +42,7 @@
 
 //             return console.log(onSuccess(pizzaName));
 //         }
-                
+
 //         else return console.log(onError(`There is no pizza with a name ${pizzaName} in the assortment.`));  
 
 //   },
@@ -114,8 +114,8 @@
 //         }
 //     });
 //     console.log(filteredNumbers);
-    
-    
+
+
 
 //   // Change code above this line
 //   return filteredNumbers;
@@ -140,7 +140,7 @@ firstArray и secondArray, и возвращает новый массив их 
 // function getCommonElements(firstArray, secondArray) {
 //   const commonElements = [];
 //   // Change code below this line
-    
+
 //     firstArray.forEach(function (number, index) {
 //         if (secondArray.includes(number)) {
 //       commonElements.push(number);
@@ -463,12 +463,12 @@ firstArray и secondArray, и возвращает новый массив их 
 // ];
 
 // const getUserNames = users => {
-    
+
 //     const userNames = users.map(user => user.name);
 //    console.log(userNames);
 
 // };
-  
+
 // getUserNames(users);
 
 
@@ -562,7 +562,7 @@ firstArray и secondArray, и возвращает новый массив их 
 // const getUserEmails = users2 => {
 //     return userEmails = users2.map(user => user.email);
 // };
-  
+
 // console.log(getUserEmails(users));
 
 
@@ -738,7 +738,7 @@ const users = [
 
 //     const usersWithEyeColor = users.filter(user => user.eyeColor === color);
 //     console.log(usersWithEyeColor);
- 
+
 // };
 
 // getUsersWithEyeColor(users, "blue"); //Moore Hensley, Sharlene Bush и Carey Barr
@@ -925,7 +925,7 @@ const users = [
 */
 
 // const getUsersWithFriend = (users, friendName) => {
-    
+
 //     const usersWithFriend = users.filter(user => user.friends.includes(friendName));
 
 //     const usersName = usersWithFriend.flatMap(userName => userName.name);
@@ -1024,7 +1024,7 @@ const users = [
 //     console.log(friendsName);
 //     const uniqueFriends = friendsName.filter((name, index, array) => array.indexOf(name) === index);
 //     console.log(uniqueFriends);
-   
+
 // };
 
 // getFriends(users);
@@ -1115,7 +1115,7 @@ const users = [
 // const getActiveUsers = (users) => {
 
 //     const activeUsers = users.filter(user => user.isActive);
-    
+
 //     const nameActiveUser = activeUsers.flatMap(name => name.name);
 //     console.log(nameActiveUser);
 
@@ -1206,7 +1206,7 @@ const users = [
 */
 
 // const getInactiveUsers = (users) => {
-   
+
 //     const inactiveUsers = users.filter(user => user.isActive === false);
 
 //     const nameInactiveUsers = inactiveUsers.flatMap(name => name.name);
@@ -1338,7 +1338,7 @@ const users = [
 */
 
 // const getUserWithEmail = (users, email) => {
-   
+
 //     const userWithEmail = users.find(user => user.email === email);
 //     console.log(userWithEmail);
 // };
@@ -1468,7 +1468,7 @@ const users = [
 */
 
 // const isEveryUserActive = (users) => {
-   
+
 //     const everyUserActive = users.every(user => user.isActive === true);
 //     console.log(everyUserActive);
 // };
@@ -1596,7 +1596,7 @@ const users = [
 */
 
 // const isAnyUserActive = users => {
-   
+
 //     const anyUsersActive = users.some(user => user.isActive === true);
 //     console.log(anyUsersActive);
 // };
@@ -1739,7 +1739,7 @@ const users = [
 
 //     const totalBalance = users.reduce((total, curentBalance) => { return total + curentBalance.balance }, 0);
 //     console.log(totalBalance);
-   
+
 // };
 
 // calculateTotalBalance(users); //20916
@@ -1752,84 +1752,86 @@ const users = [
 (свойство friends) всех пользователей из массива users
 */
 
-// const users = [
-//     {
-//         name: "Moore Hensley",
-//         email: "moorehensley@indexia.com",
-//         eyeColor: "blue",
-//         friends: ["Sharron Pace"],
-//         isActive: false,
-//         balance: 2811,
-//         gender: "male",
-//         age: 37
-//     },
-//     {
-//         name: "Sharlene Bush",
-//         email: "sharlenebush@tubesys.com",
-//         eyeColor: "blue",
-//         friends: ["Briana Decker", "Sharron Pace"],
-//         isActive: true,
-//         balance: 3821,
-//         gender: "female",
-//         age: 34
-//     },
-//     {
-//         name: "Ross Vazquez",
-//         email: "rossvazquez@xinware.com",
-//         eyeColor: "green",
-//         friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
-//         isActive: false,
-//         balance: 3793,
-//         gender: "male",
-//         age: 24
-//     },
-//     {
-//         name: "Elma Head",
-//         email: "elmahead@omatom.com",
-//         eyeColor: "green",
-//         friends: ["Goldie Gentry", "Aisha Tran"],
-//         isActive: true,
-//         balance: 2278,
-//         gender: "female",
-//         age: 21
-//     },
-//     {
-//         name: "Carey Barr",
-//         email: "careybarr@nurali.com",
-//         eyeColor: "blue",
-//         friends: ["Jordan Sampson", "Eddie Strong"],
-//         isActive: true,
-//         balance: 3951,
-//         gender: "male",
-//         age: 27
-//     },
-//     {
-//         name: "Blackburn Dotson",
-//         email: "blackburndotson@furnigeer.com",
-//         eyeColor: "brown",
-//         friends: ["Jacklyn Lucas", "Linda Chapman"],
-//         isActive: false,
-//         balance: 1498,
-//         gender: "male",
-//         age: 38
-//     },
-//     {
-//         name: "Sheree Anthony",
-//         email: "shereeanthony@kog.com",
-//         eyeColor: "brown",
-//         friends: ["Goldie Gentry", "Briana Decker"],
-//         isActive: true,
-//         balance: 2764,
-//         gender: "female",
-//         age: 39
-//     }
-// ];
+/*
+const users = [
+    {
+        name: "Moore Hensley",
+        email: "moorehensley@indexia.com",
+        eyeColor: "blue",
+        friends: ["Sharron Pace"],
+        isActive: false,
+        balance: 2811,
+        gender: "male",
+        age: 37
+    },
+    {
+        name: "Sharlene Bush",
+        email: "sharlenebush@tubesys.com",
+        eyeColor: "blue",
+        friends: ["Briana Decker", "Sharron Pace"],
+        isActive: true,
+        balance: 3821,
+        gender: "female",
+        age: 34
+    },
+    {
+        name: "Ross Vazquez",
+        email: "rossvazquez@xinware.com",
+        eyeColor: "green",
+        friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+        isActive: false,
+        balance: 3793,
+        gender: "male",
+        age: 24
+    },
+    {
+        name: "Elma Head",
+        email: "elmahead@omatom.com",
+        eyeColor: "green",
+        friends: ["Goldie Gentry", "Aisha Tran"],
+        isActive: true,
+        balance: 2278,
+        gender: "female",
+        age: 21
+    },
+    {
+        name: "Carey Barr",
+        email: "careybarr@nurali.com",
+        eyeColor: "blue",
+        friends: ["Jordan Sampson", "Eddie Strong"],
+        isActive: true,
+        balance: 3951,
+        gender: "male",
+        age: 27
+    },
+    {
+        name: "Blackburn Dotson",
+        email: "blackburndotson@furnigeer.com",
+        eyeColor: "brown",
+        friends: ["Jacklyn Lucas", "Linda Chapman"],
+        isActive: false,
+        balance: 1498,
+        gender: "male",
+        age: 38
+    },
+    {
+        name: "Sheree Anthony",
+        email: "shereeanthony@kog.com",
+        eyeColor: "brown",
+        friends: ["Goldie Gentry", "Briana Decker"],
+        isActive: true,
+        balance: 2764,
+        gender: "female",
+        age: 39
+    }
+];
+*/
 
 // const getTotalFriendCount = users => {
 
 //     const totalBalance = users.reduce((total, curentFriend) => { return total + curentFriend.friends.length }, 0);
 //     console.log(totalBalance);
-   
+
 // };
 
 // getTotalFriendCount(users); //14
@@ -1838,68 +1840,691 @@ const users = [
 
 /* 
 Автопроверки 4.38
+Дополни код так, чтобы в переменной ascendingReleaseDates получилась отсортированная по возрастанию копия 
+массива releaseDates, а в переменной alphabeticalAuthors копия массива имён авторов authors отсортированная в по алфавиту.
 */
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+// ];
+// // Change code below this line
+
+// const ascendingReleaseDates = [...releaseDates].sort();
+
+// const alphabeticalAuthors = [...authors].sort();
+
+// console.log(ascendingReleaseDates);
+// console.log(alphabeticalAuthors);
 
 
 
 /* 
 Автопроверки 4.39
+Онлайн бибилиотеке необходимо отображать книги сортированные по дате издания, по её возрастанию или убыванию. 
+Дополни код так, чтобы в переменной ascendingReleaseDates получилась отсортированная по возрастанию копия 
+массива releaseDates, а в переменной descendingReleaseDates копия отсортированная по убыванию.
 */
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// // Change code below this line
+
+// const ascendingReleaseDates = [...releaseDates].sort((a,b)=> a-b);
+
+// const descendingReleaseDates = [...releaseDates].sort((a,b)=> b-a);
+
+// console.log(ascendingReleaseDates);
+// console.log(descendingReleaseDates);
 
 
 
 /* 
 Автопроверки 4.40
+Онлайн бибилиотеке необходимо отображать книги отсортированные по автору, в алфавитном и обратном алфавитном порядке. 
+Дополни код так, чтобы в переменной authorsInAlphabetOrder получилась отсортированная по алфавиту копия массива authors, 
+а в переменной authorsInReversedOrder копия отсортированная в обратном алфавитном порядке
 */
 
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+//   "Howard Lovecraft",
+// ];
+// // Change code below this line
+
+// const authorsInAlphabetOrder = [...authors].sort((a,b)=> a.localeCompare(b));
+
+// const authorsInReversedOrder = [...authors].sort((a, b) => b.localeCompare(a));
+
+// console.log(authorsInAlphabetOrder);
+// console.log(authorsInReversedOrder);
 
 
 /* 
 Автопроверки 4.41
+Дополни код так, чтобы:
+
+В переменной sortedByAuthorName получился массив книг отсортированный по имени автора в алфавитном порядке.
+В переменной sortedByReversedAuthorName получился массив книг отсортированный по имени автора в обратном алфавитном порядке.
+В переменной sortedByAscendingRating получился массив книг отсортированный по возрастанию рейтинга.
+В переменной sortedByDescentingRating получился массив книг отсортированный по убыванию рейтинга.
 */
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// ];
+// // Change code below this line
+
+// const sortedByAuthorName = [...books].sort((firstLetter, nextLetter)=> firstLetter.author.localeCompare(nextLetter.author));
+
+// const sortedByReversedAuthorName = [...books].sort((firstLetter, nextLetter)=> nextLetter.author.localeCompare(firstLetter.author));
+
+// const sortedByAscendingRating = [...books].sort((firstRating, nextRating)=> firstRating.rating -nextRating.rating );
+
+// const sortedByDescentingRating = [...books].sort((firstRating, nextRating) => nextRating.rating - firstRating.rating);
+
+// console.log(sortedByAuthorName.flatMap(author => author.author));
+// console.log(sortedByReversedAuthorName.flatMap(author => author.author));
+// console.log(sortedByAscendingRating.flatMap(rating => rating.rating));
+// console.log(sortedByDescentingRating.flatMap(rating => rating.rating));
 
 
 
 /* 
 Автопроверки 4.42
+Дополни функцию sortByAscendingBalance(users) так, чтобы она возвращала массив пользователей 
+отсортированный по возрастанию их баланса (свойство balance)
 */
+
+/*
+const users = [
+    {
+        name: "Moore Hensley",
+        email: "moorehensley@indexia.com",
+        eyeColor: "blue",
+        friends: ["Sharron Pace"],
+        isActive: false,
+        balance: 2811,
+        gender: "male",
+        age: 37
+    },
+    {
+        name: "Sharlene Bush",
+        email: "sharlenebush@tubesys.com",
+        eyeColor: "blue",
+        friends: ["Briana Decker", "Sharron Pace"],
+        isActive: true,
+        balance: 3821,
+        gender: "female",
+        age: 34
+    },
+    {
+        name: "Ross Vazquez",
+        email: "rossvazquez@xinware.com",
+        eyeColor: "green",
+        friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+        isActive: false,
+        balance: 3793,
+        gender: "male",
+        age: 24
+    },
+    {
+        name: "Elma Head",
+        email: "elmahead@omatom.com",
+        eyeColor: "green",
+        friends: ["Goldie Gentry", "Aisha Tran"],
+        isActive: true,
+        balance: 2278,
+        gender: "female",
+        age: 21
+    },
+    {
+        name: "Carey Barr",
+        email: "careybarr@nurali.com",
+        eyeColor: "blue",
+        friends: ["Jordan Sampson", "Eddie Strong"],
+        isActive: true,
+        balance: 3951,
+        gender: "male",
+        age: 27
+    },
+    {
+        name: "Blackburn Dotson",
+        email: "blackburndotson@furnigeer.com",
+        eyeColor: "brown",
+        friends: ["Jacklyn Lucas", "Linda Chapman"],
+        isActive: false,
+        balance: 1498,
+        gender: "male",
+        age: 38
+    },
+    {
+        name: "Sheree Anthony",
+        email: "shereeanthony@kog.com",
+        eyeColor: "brown",
+        friends: ["Goldie Gentry", "Briana Decker"],
+        isActive: true,
+        balance: 2764,
+        gender: "female",
+        age: 39
+    }
+];
+*/
+
+// const sortByAscendingBalance = users => {
+
+//     const byAscendingBalance = [...users].sort((firstBalance, nextBalance) => firstBalance.balance - nextBalance.balance);
+//     console.log(byAscendingBalance.flatMap(balance => balance.balance));
+// };
+
+// sortByAscendingBalance(users);
 
 
 
 /* 
 Автопроверки 4.43
+Дополни функцию sortByDescendingFriendCount(users) так, чтобы она возвращала массив пользователей 
+отсортированный по убыванию количества их друзей (свойство friends).
 */
+
+/*
+const users = [
+    {
+        name: "Moore Hensley",
+        email: "moorehensley@indexia.com",
+        eyeColor: "blue",
+        friends: ["Sharron Pace"],
+        isActive: false,
+        balance: 2811,
+        gender: "male",
+        age: 37
+    },
+    {
+        name: "Sharlene Bush",
+        email: "sharlenebush@tubesys.com",
+        eyeColor: "blue",
+        friends: ["Briana Decker", "Sharron Pace"],
+        isActive: true,
+        balance: 3821,
+        gender: "female",
+        age: 34
+    },
+    {
+        name: "Ross Vazquez",
+        email: "rossvazquez@xinware.com",
+        eyeColor: "green",
+        friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+        isActive: false,
+        balance: 3793,
+        gender: "male",
+        age: 24
+    },
+    {
+        name: "Elma Head",
+        email: "elmahead@omatom.com",
+        eyeColor: "green",
+        friends: ["Goldie Gentry", "Aisha Tran"],
+        isActive: true,
+        balance: 2278,
+        gender: "female",
+        age: 21
+    },
+    {
+        name: "Carey Barr",
+        email: "careybarr@nurali.com",
+        eyeColor: "blue",
+        friends: ["Jordan Sampson", "Eddie Strong"],
+        isActive: true,
+        balance: 3951,
+        gender: "male",
+        age: 27
+    },
+    {
+        name: "Blackburn Dotson",
+        email: "blackburndotson@furnigeer.com",
+        eyeColor: "brown",
+        friends: ["Jacklyn Lucas", "Linda Chapman"],
+        isActive: false,
+        balance: 1498,
+        gender: "male",
+        age: 38
+    },
+    {
+        name: "Sheree Anthony",
+        email: "shereeanthony@kog.com",
+        eyeColor: "brown",
+        friends: ["Goldie Gentry", "Briana Decker"],
+        isActive: true,
+        balance: 2764,
+        gender: "female",
+        age: 39
+    }
+];
+*/
+
+// const sortByDescendingFriendCount = users => {
+
+//     const byDescendingFriendCount = [...users].sort((firstCount, nextcount) => nextcount.friends.length - firstCount.friends.length);
+//     console.log(byDescendingFriendCount.flatMap(count => count.friends.length));
+// };
+
+// sortByDescendingFriendCount(users);
 
 
 
 /* 
 Автопроверки 4.44
+Дополни функцию sortByName(users) так, чтобы она возвращала массив пользователей отсортированный по их имени (свойство name) в алфавитном порядке.
 */
+
+/*
+const users = [
+    {
+        name: "Moore Hensley",
+        email: "moorehensley@indexia.com",
+        eyeColor: "blue",
+        friends: ["Sharron Pace"],
+        isActive: false,
+        balance: 2811,
+        gender: "male",
+        age: 37
+    },
+    {
+        name: "Sharlene Bush",
+        email: "sharlenebush@tubesys.com",
+        eyeColor: "blue",
+        friends: ["Briana Decker", "Sharron Pace"],
+        isActive: true,
+        balance: 3821,
+        gender: "female",
+        age: 34
+    },
+    {
+        name: "Ross Vazquez",
+        email: "rossvazquez@xinware.com",
+        eyeColor: "green",
+        friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+        isActive: false,
+        balance: 3793,
+        gender: "male",
+        age: 24
+    },
+    {
+        name: "Elma Head",
+        email: "elmahead@omatom.com",
+        eyeColor: "green",
+        friends: ["Goldie Gentry", "Aisha Tran"],
+        isActive: true,
+        balance: 2278,
+        gender: "female",
+        age: 21
+    },
+    {
+        name: "Carey Barr",
+        email: "careybarr@nurali.com",
+        eyeColor: "blue",
+        friends: ["Jordan Sampson", "Eddie Strong"],
+        isActive: true,
+        balance: 3951,
+        gender: "male",
+        age: 27
+    },
+    {
+        name: "Blackburn Dotson",
+        email: "blackburndotson@furnigeer.com",
+        eyeColor: "brown",
+        friends: ["Jacklyn Lucas", "Linda Chapman"],
+        isActive: false,
+        balance: 1498,
+        gender: "male",
+        age: 38
+    },
+    {
+        name: "Sheree Anthony",
+        email: "shereeanthony@kog.com",
+        eyeColor: "brown",
+        friends: ["Goldie Gentry", "Briana Decker"],
+        isActive: true,
+        balance: 2764,
+        gender: "female",
+        age: 39
+    }
+];
+*/
+
+// const sortByName = users => {
+
+//     const byName = [...users].sort((firstLetter, nextLetter) => firstLetter.name.localeCompare(nextLetter.name));
+//     console.log(byName.flatMap(name => name.name));
+// };
+
+// sortByName(users);
 
 
 
 /* 
 Автопроверки 4.45
+Дополни код так, чтобы в переменной names получился массив имён авторов в алфавитном порядке, 
+рейтинг книг которых больше значения переменной MIN_BOOK_RATING
 */
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   {
+//     title: "The Dreams in the Witch House",
+//     author: "Howard Lovecraft",
+//     rating: 8.67,
+//   },
+// ];
+// const MIN_BOOK_RATING = 8;
+// // Change code below this line
+
+// const names = [...books].filter(rating => rating.rating > MIN_BOOK_RATING).map(author => author.author).sort((firstLetter, nextLetter) => firstLetter.localeCompare(nextLetter));
+
+// console.log(names); //["Bernard Cornwell", "Howard Lovecraft", "Robert Sheckley"]
+
 
 
 
 /* 
 Автопроверки 4.46
+Дополни функцию getNamesSortedByFriendCount(users) так, чтобы она возвращала массив имён пользователей отсортированный 
+по возрастанию количества их друзей (свойство friends).
 */
 
+/*
+const users = [
+    {
+        name: "Moore Hensley",
+        email: "moorehensley@indexia.com",
+        eyeColor: "blue",
+        friends: ["Sharron Pace"],
+        isActive: false,
+        balance: 2811,
+        gender: "male",
+        age: 37
+    },
+    {
+        name: "Sharlene Bush",
+        email: "sharlenebush@tubesys.com",
+        eyeColor: "blue",
+        friends: ["Briana Decker", "Sharron Pace"],
+        isActive: true,
+        balance: 3821,
+        gender: "female",
+        age: 34
+    },
+    {
+        name: "Ross Vazquez",
+        email: "rossvazquez@xinware.com",
+        eyeColor: "green",
+        friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+        isActive: false,
+        balance: 3793,
+        gender: "male",
+        age: 24
+    },
+    {
+        name: "Elma Head",
+        email: "elmahead@omatom.com",
+        eyeColor: "green",
+        friends: ["Goldie Gentry", "Aisha Tran"],
+        isActive: true,
+        balance: 2278,
+        gender: "female",
+        age: 21
+    },
+    {
+        name: "Carey Barr",
+        email: "careybarr@nurali.com",
+        eyeColor: "blue",
+        friends: ["Jordan Sampson", "Eddie Strong"],
+        isActive: true,
+        balance: 3951,
+        gender: "male",
+        age: 27
+    },
+    {
+        name: "Blackburn Dotson",
+        email: "blackburndotson@furnigeer.com",
+        eyeColor: "brown",
+        friends: ["Jacklyn Lucas", "Linda Chapman"],
+        isActive: false,
+        balance: 1498,
+        gender: "male",
+        age: 38
+    },
+    {
+        name: "Sheree Anthony",
+        email: "shereeanthony@kog.com",
+        eyeColor: "brown",
+        friends: ["Goldie Gentry", "Briana Decker"],
+        isActive: true,
+        balance: 2764,
+        gender: "female",
+        age: 39
+    }
+];
+*/
+
+// const getNamesSortedByFriendCount = users => {
+//    const namesSortedByFriendCount = [...users].sort((firstCount, nextcount) => firstCount.friends.length - nextcount.friends.length).map(name => name.name);
+// console.log(namesSortedByFriendCount);
+// };
+
+// getNamesSortedByFriendCount(users);//["Moore Hensley", "Sharlene Bush", "Elma Head", "Sheree Anthony", "Ross Vazquez", "Carey Barr", "Blackburn Dotson"]
 
 
 
 /* 
 Автопроверки 4.47
+Дополни функцию getSortedFriends(users) так, чтобы она возвращала массив уникальных имён друзей (свойство friends) отсортированный по алфавиту
 */
+
+/*
+const users = [
+    {
+        name: "Moore Hensley",
+        email: "moorehensley@indexia.com",
+        eyeColor: "blue",
+        friends: ["Sharron Pace"],
+        isActive: false,
+        balance: 2811,
+        gender: "male"
+    },
+    {
+        name: "Sharlene Bush",
+        email: "sharlenebush@tubesys.com",
+        eyeColor: "blue",
+        friends: ["Briana Decker", "Sharron Pace"],
+        isActive: true,
+        balance: 3821,
+        gender: "female"
+    },
+    {
+        name: "Ross Vazquez",
+        email: "rossvazquez@xinware.com",
+        eyeColor: "green",
+        friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+        isActive: false,
+        balance: 3793,
+        gender: "male"
+    },
+    {
+        name: "Elma Head",
+        email: "elmahead@omatom.com",
+        eyeColor: "green",
+        friends: ["Goldie Gentry", "Aisha Tran"],
+        isActive: true,
+        balance: 2278,
+        gender: "female"
+    },
+    {
+        name: "Carey Barr",
+        email: "careybarr@nurali.com",
+        eyeColor: "blue",
+        friends: ["Jordan Sampson", "Eddie Strong", "Adrian Cross"],
+        isActive: true,
+        balance: 3951,
+        gender: "male"
+    },
+    {
+        name: "Blackburn Dotson",
+        email: "blackburndotson@furnigeer.com",
+        eyeColor: "brown",
+        friends: ["Jacklyn Lucas", "Linda Chapman", "Adrian Cross", "Solomon Fokes"],
+        isActive: false,
+        balance: 1498,
+        gender: "male"
+    },
+    {
+        name: "Sheree Anthony",
+        email: "shereeanthony@kog.com",
+        eyeColor: "brown",
+        friends: ["Goldie Gentry", "Briana Decker"],
+        isActive: true,
+        balance: 2764,
+        gender: "female"
+    }
+];
+*/
+
+// const getSortedFriends = users => {
+//     const sortedFriends = [...users]
+//         .flatMap(friend => friend.friends)
+//         .filter((friend, index, array) => array.indexOf(friend) === index)
+//         .sort((firstLetter, nextLetter) => firstLetter.localeCompare(nextLetter));
+
+// console.log(sortedFriends);
+// };
+
+// getSortedFriends(users);//["Adrian Cross", "Aisha Tran", "Briana Decker", "Eddie Strong", "Goldie Gentry", "Jacklyn Lucas", "Jordan Sampson", "Linda Chapman", "Marilyn Mcintosh", "Naomi Buckner", "Padilla Garrison", "Sharron Pace", "Solomon Fokes"]
 
 
 
 /* 
 Автопроверки 4.48
+Дополни функцию getTotalBalanceByGender(users, gender) так, чтобы она возвращала общий баланс пользователей 
+(свойство balance), пол которых (свойство gender) совпадает со значением параметра gender
 */
+
+/*
+const users = [
+  {
+    name: "Moore Hensley",
+    email: "moorehensley@indexia.com",
+    eyeColor: "blue",
+    friends: ["Sharron Pace"],
+    isActive: false,
+    balance: 2811,
+    gender: "male"
+  },
+  {
+    name: "Sharlene Bush",
+    email: "sharlenebush@tubesys.com",
+    eyeColor: "blue",
+    friends: ["Briana Decker", "Sharron Pace"],
+    isActive: true,
+    balance: 3821,
+    gender: "female"
+  },
+  {
+    name: "Ross Vazquez",
+    email: "rossvazquez@xinware.com",
+    eyeColor: "green",
+    friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+    isActive: false,
+    balance: 3793,
+    gender: "male"
+  },
+  {
+    name: "Elma Head",
+    email: "elmahead@omatom.com",
+    eyeColor: "green",
+    friends: ["Goldie Gentry", "Aisha Tran"],
+    isActive: true,
+    balance: 2278,
+    gender: "female"
+  },
+  {
+    name: "Carey Barr",
+    email: "careybarr@nurali.com",
+    eyeColor: "blue",
+    friends: ["Jordan Sampson", "Eddie Strong", "Adrian Cross"],
+    isActive: true,
+    balance: 3951,
+    gender: "male"
+  },
+  {
+    name: "Blackburn Dotson",
+    email: "blackburndotson@furnigeer.com",
+    eyeColor: "brown",
+    friends: ["Jacklyn Lucas", "Linda Chapman", "Adrian Cross", "Solomon Fokes"],
+    isActive: false,
+    balance: 1498,
+    gender: "male"
+  },
+  {
+    name: "Sheree Anthony",
+    email: "shereeanthony@kog.com",
+    eyeColor: "brown",
+    friends: ["Goldie Gentry", "Briana Decker"],
+    isActive: true,
+    balance: 2764,
+    gender: "female"
+  }
+];
+*/
+
+// const getTotalBalanceByGender = (users, gender) => {
+
+const totalBalanceByGender = [...users].filter(user => user.gender === gender).reduce((total, balance) => { return total + balance.balance }, 0);
+console.log(totalBalanceByGender);
+
+// };
+
+// getTotalBalanceByGender(users, "male") //12053
+// getTotalBalanceByGender(users, "female") //8863
+
+
+
+
 
 
 
