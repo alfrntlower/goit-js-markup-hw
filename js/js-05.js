@@ -110,25 +110,118 @@ this при обращении к свойствам объекта.
 
 /*
 Автопроверки 5.4
+Измени код так, чтобы объект parent стал прототипом для объекта в переменной сhild
 */
+
+// const parent = {
+//   name: "Stacey",
+//   surname: "Moore",
+//   age: 54,
+//   heritage: "Irish",
+// };
+// // Change code below this line
+
+// const child = Object.create(parent);
+
+// // Change code above this line
+// child.name = "Jason";
+// child.age = 27;
+
+// console.log(parent.hasOwnProperty("surname")); // true
+// console.log(parent.hasOwnProperty("heritage")); /// true
+
+// console.log(child.hasOwnProperty("name")); // true
+// console.log(child.name); // "Jason"
+// console.log(child.hasOwnProperty("age")); // true
+// console.log(child.age); // 27
+// console.log(child.hasOwnProperty("surname")); // false
+// console.log(child.surname); // "Moore"
+// console.log(child.hasOwnProperty("heritage")); // false
+// console.log(child.heritage); // "Irish"
+// console.log(parent.isPrototypeOf(child)); // true
 
 
 
 /*
 Автопроверки 5.5
+Измени код, построив цепочку прототипов так, чтобы объект ancestor был прототипом для parent, а тот в свою очередь был прототипом для child
 */
+
+// const ancestor = {
+//   name: "Paul",
+//   age: 83,
+//   surname: "Dawson",
+//   heritage: "Irish",
+// };
+// // Change code below this line
+
+// const parent = Object.create(ancestor);
+// parent.name = "Stacey";
+// parent.surname = "Moore";
+// parent.age = 54;
+
+// const child = Object.create(parent);
+// child.name = "Jason";
+// child.age = 27;
+
+// // Change code above this line
+
+// console.log(ancestor.isPrototypeOf("parent")) // true
+// console.log(parent.isPrototypeOf("child")) // true
+// console.log(ancestor.hasOwnProperty("surname")) // true
+// console.log(ancestor.surname) // "Dawson"
+// console.log(parent.hasOwnProperty("surname")) // true
+// console.log(parent.surname) // "Moore"
+// console.log(child.hasOwnProperty("surname")) // false
+// console.log(child.surname) // "Moore"
+// console.log(ancestor.hasOwnProperty("heritage")) // true
+// console.log(ancestor.heritage) // "Irish"
+// console.log(parent.hasOwnProperty("heritage")) // false
+// console.log(parent.heritage) // "Irish"
+// console.log(child.hasOwnProperty("heritage")) // false
+// console.log(child.heritage) // "Irish"
 
 
 
 /*
 Автопроверки 5.6
+Используя ключевое слово class объяви класс Car с пустым телом.
 */
+
+// class Car{
+
+// }
+
+// console.log( new Car());
 
 
 
 /*
 Автопроверки 5.7
+Добавь классу Car метод constructor который принимает три параметра:
+
+brand - марка автомобиля.
+model - модель автомобиля.
+price - цена автомобиля.
+Класс Car должен создавать объект с одноимёнными свойствами brand, model и price, 
+значениями которых должны быть переданные аргументы во время её вызова с оператором new.
 */
+
+// class Car {
+//   // Change code below this line
+
+//     constructor(brand, model, price) {
+//         this.brand = brand;
+//         this.model = model;
+//         this.price = price;
+//     }
+
+//   // Change code above this line
+// }
+
+// console.log(new Car("Audi", "Q3", 36000)) // { brand: "Audi", model: "Q3", price: 36000 }
+// console.log(new Car("BMW", "X5", 58900)) // { brand: "BMW", model: "X5", price: 58900 }
+// console.log(new Car("Nissan","Murano", 31700)) // { brand: "Nissan", model: "Murano", price: 31700 }
 
 
 
