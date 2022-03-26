@@ -578,37 +578,211 @@ model и price для взаимодействия с приватными св�
 //     // Change code above this line
 //   }
   
-//   const audi = new Car({ price: 35000 });
-//   console.log(audi.price); // 35000
+//  const audi = new Car({ price: 35000 });
+//  console.log(audi.price); // 35000
   
-//   audi.price = 49000;
+//  audi.price = 49000;
 //  console.log(audi.price); // 49000
   
-//   audi.price = 51000;
-//   console.log(audi.price); // 49000  
+//  audi.price = 51000;
+//  console.log(audi.price); // 49000  
 
 
 
 /*
 Автопроверки 5.17
+Добавь классу Car публичный статический метод checkPrice(price), принимающий цену автомобиля.
+Метод должен сравнить значения параметра price и приватного статического свойства MAX_PRICE.
+
+Если цена автомобиля превышает максимальную, метод должен вернуть строку "Error! Price exceeds the maximum".
+В противном случае метод должен вернуть строку "Success! Price is within acceptable limits".
+Под объявлением класса мы добавили инициализацию экземпляра и вызовы методов, чтобы показать как 
+будет использоваться метод checkPrice(price)
 */
 
+// class Car {
+//   static #MAX_PRICE = 50000;
+//   // Change code below this line
+
+//   static checkPrice(price) {
+
+//     if (price > this.#MAX_PRICE) {
+//       return "Error! Price exceeds the maximum";
+//     }
+//     return "Success! Price is within acceptable limits";
+  
+//   }
+
+//   // Change code above this line
+//   constructor({ price }) {
+//     this.price = price;
+//   }
+// }
+
+// const audi = new Car({ price: 36000 });
+// const bmw = new Car({ price: 64000 });
+
+// console.log(Car.checkPrice(audi.price)); // "Success! Price is within acceptable limits"
+// console.log(Car.checkPrice(bmw.price)); // "Error! Price exceeds the maximum"
 
 
 /*
 Автопроверки 5.18
-*/
+В приложении нужен администратор с возможностью добавлять почты пользователей в чёрный список.
 
+Объяви класс Admin, который наследует от класса User
+Добавь классу Admin публичное статическое свойство AccessLevel (уровень доступа), 
+значение которого это объект { BASIC: "basic", SUPERUSER: "superuser" }
+*/
+// class User {
+//   constructor(email) {
+//     this.email = email;
+//   }
+
+//   get email() {
+//     return this.email;
+//   }
+
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+// // Change code below this line
+
+// class Admin extends User{
+
+//   static AccessLevel = {
+//     BASIC: "basic",
+//     SUPERUSER: "superuser"
+//   }
+
+// }
+
+// console.log(Admin.AccessLevel.BASIC); // "basic"
+// console.log(Admin.AccessLevel.SUPERUSER); // "superuser"
 
 
 
 /*
 Автопроверки 5.19
+Добавь классу Admin метод constructor, который принимает один параметр - объект настроек 
+с двумя свойствами email и accessLevel. Добавь классу Admin публичное свойство accessLevel, 
+значение которого будет передаваться при вызове конструктора.
+
+Чтобы показать как будет использоваться класс Admin мы добавили инициализацию экземпляра под объявлением класса.
 */
 
+// class User {
+//   email;
+
+//   constructor(email) {
+//     this.email = email;
+//   }
+
+//   get email() {
+//     return this.email;
+//   }
+
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+
+// class Admin extends User {
+//   // Change code below this line
+
+//   accessLevel;
+
+//   static AccessLevel = {
+//     BASIC: "basic",
+//     SUPERUSER: "superuser",
+//   };
+
+//   constructor({email, accessLevel}) {
+//     super(email);
+//     this.accessLevel = accessLevel;
+//   }
+
+//   // Change code above this line
+// }
+
+// const mango = new Admin({
+//   email: "mango@mail.com",
+//   accessLevel: Admin.AccessLevel.SUPERUSER,
+// });
+
+// console.log(mango.email); // "mango@mail.com"
+// console.log(mango.accessLevel); // "superuser"
 
 
 
 /*
 Автопроверки 5.20
+Добавь классу Admin следующие свойства и методы.
+
+Публичное свойство blacklistedEmails для хранения чёрного списка почтовых адресов пользователей. 
+Значение по умолчанию это пустой массив.
+Публичный метод blacklist(email) для добавления почты в чёрный список. 
+Метод должен добавлять значение параметра email в массив хранящийся в свойстве blacklistedEmails.
+Публичный метод isBlacklisted(email) для проверки почты в чёрном списке. 
+Метод должен проверять наличие значения параметра email в массиве хранящемся в свойстве blacklistedEmails 
+и возвращать true или false.
+После объявления класса мы добавили инициализацию экземпляра и вызовы методов в той последовательности, 
+в которой твой код будут проверять тесты. Пожалуйста ничего там не меняй.
 */
+
+// class User {
+//   email;
+
+//   constructor(email) {
+//     this.email = email;
+//   }
+
+//   get email() {
+//     return this.email;
+//   }
+
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+// class Admin extends User {
+//   // Change code below this line
+
+//   blacklistedEmails = [];
+
+//   static AccessLevel = {
+//     BASIC: "basic",
+//     SUPERUSER: "superuser",
+//   };
+
+//   constructor({ email, accessLevel }) {
+//     super(email);
+//     this.accessLevel = accessLevel;
+//   }
+
+//   blacklist(email) {
+//     this.blacklistedEmails.push(email);
+    
+//   }
+//   isBlacklisted(email) {
+//     return this.blacklistedEmails.includes(email);
+    
+//   }
+
+//   // Change code above this line
+// }
+
+// const mango = new Admin({
+//   email: "mango@mail.com",
+//   accessLevel: Admin.AccessLevel.SUPERUSER,
+// });
+
+// console.log(mango.email); // "mango@mail.com"
+// console.log(mango.accessLevel); // "superuser"
+
+// mango.blacklist("poly@mail.com");
+// console.log(mango.blacklistedEmails); // ["poly@mail.com"]
+// console.log(mango.isBlacklisted("mango@mail.com")); // false
+// console.log(mango.isBlacklisted("poly@mail.com")); // true
+
